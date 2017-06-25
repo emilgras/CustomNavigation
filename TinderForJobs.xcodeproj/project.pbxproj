@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		F2A756CF1EFFEFD700C3BCAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756CE1EFFEFD700C3BCAC /* AppDelegate.swift */; };
-		F2A756D11EFFEFD700C3BCAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756D01EFFEFD700C3BCAC /* ViewController.swift */; };
+		F2A756D11EFFEFD700C3BCAC /* SwipeNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756D01EFFEFD700C3BCAC /* SwipeNavigationVC.swift */; };
 		F2A756D41EFFEFD700C3BCAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A756D21EFFEFD700C3BCAC /* Main.storyboard */; };
 		F2A756D61EFFEFD700C3BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A756D51EFFEFD700C3BCAC /* Assets.xcassets */; };
 		F2A756D91EFFEFD700C3BCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A756D71EFFEFD700C3BCAC /* LaunchScreen.storyboard */; };
+		F2A756E51EFFF00A00C3BCAC /* SwipeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756E21EFFF00A00C3BCAC /* SwipeNavigationController.swift */; };
+		F2A756E61EFFF00A00C3BCAC /* SwipeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756E31EFFF00A00C3BCAC /* SwipeNavigationBar.swift */; };
+		F2A756E71EFFF00A00C3BCAC /* SwipeNavigationBackgroundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756E41EFFF00A00C3BCAC /* SwipeNavigationBackgroundEffects.swift */; };
+		F2A756EF1EFFF35800C3BCAC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756EE1EFFF35800C3BCAC /* ProfileVC.swift */; };
+		F2A756F11EFFF36D00C3BCAC /* CardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F01EFFF36D00C3BCAC /* CardsVC.swift */; };
+		F2A756F31EFFF3AE00C3BCAC /* MatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F2A756CB1EFFEFD700C3BCAC /* TinderForJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderForJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A756CE1EFFEFD700C3BCAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2A756D01EFFEFD700C3BCAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2A756D01EFFEFD700C3BCAC /* SwipeNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeNavigationVC.swift; sourceTree = "<group>"; };
 		F2A756D31EFFEFD700C3BCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2A756D51EFFEFD700C3BCAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2A756D81EFFEFD700C3BCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2A756DA1EFFEFD700C3BCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A756E21EFFF00A00C3BCAC /* SwipeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeNavigationController.swift; sourceTree = "<group>"; };
+		F2A756E31EFFF00A00C3BCAC /* SwipeNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeNavigationBar.swift; sourceTree = "<group>"; };
+		F2A756E41EFFF00A00C3BCAC /* SwipeNavigationBackgroundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeNavigationBackgroundEffects.swift; sourceTree = "<group>"; };
+		F2A756EE1EFFF35800C3BCAC /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F2A756F01EFFF36D00C3BCAC /* CardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsVC.swift; sourceTree = "<group>"; };
+		F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,68 @@
 		F2A756CD1EFFEFD700C3BCAC /* TinderForJobs */ = {
 			isa = PBXGroup;
 			children = (
-				F2A756CE1EFFEFD700C3BCAC /* AppDelegate.swift */,
-				F2A756D01EFFEFD700C3BCAC /* ViewController.swift */,
-				F2A756D21EFFEFD700C3BCAC /* Main.storyboard */,
-				F2A756D51EFFEFD700C3BCAC /* Assets.xcassets */,
-				F2A756D71EFFEFD700C3BCAC /* LaunchScreen.storyboard */,
-				F2A756DA1EFFEFD700C3BCAC /* Info.plist */,
+				F2A756EB1EFFF03200C3BCAC /* App */,
+				F2A756E91EFFF01D00C3BCAC /* Storyboards */,
+				F2A756ED1EFFF33800C3BCAC /* View Controllers */,
+				F2A756EA1EFFF02B00C3BCAC /* Ressources */,
+				F2A756EC1EFFF31E00C3BCAC /* Frameworks */,
 			);
 			path = TinderForJobs;
+			sourceTree = "<group>";
+		};
+		F2A756E81EFFF00F00C3BCAC /* Swipe Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F2A756E21EFFF00A00C3BCAC /* SwipeNavigationController.swift */,
+				F2A756E31EFFF00A00C3BCAC /* SwipeNavigationBar.swift */,
+				F2A756E41EFFF00A00C3BCAC /* SwipeNavigationBackgroundEffects.swift */,
+			);
+			name = "Swipe Navigation";
+			sourceTree = "<group>";
+		};
+		F2A756E91EFFF01D00C3BCAC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F2A756D21EFFEFD700C3BCAC /* Main.storyboard */,
+				F2A756D71EFFEFD700C3BCAC /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F2A756EA1EFFF02B00C3BCAC /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F2A756D51EFFEFD700C3BCAC /* Assets.xcassets */,
+				F2A756DA1EFFEFD700C3BCAC /* Info.plist */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		F2A756EB1EFFF03200C3BCAC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2A756CE1EFFEFD700C3BCAC /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		F2A756EC1EFFF31E00C3BCAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2A756E81EFFF00F00C3BCAC /* Swipe Navigation */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2A756ED1EFFF33800C3BCAC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2A756D01EFFEFD700C3BCAC /* SwipeNavigationVC.swift */,
+				F2A756EE1EFFF35800C3BCAC /* ProfileVC.swift */,
+				F2A756F01EFFF36D00C3BCAC /* CardsVC.swift */,
+				F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +203,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A756D11EFFEFD700C3BCAC /* ViewController.swift in Sources */,
+				F2A756F31EFFF3AE00C3BCAC /* MatchesVC.swift in Sources */,
+				F2A756EF1EFFF35800C3BCAC /* ProfileVC.swift in Sources */,
+				F2A756E61EFFF00A00C3BCAC /* SwipeNavigationBar.swift in Sources */,
+				F2A756F11EFFF36D00C3BCAC /* CardsVC.swift in Sources */,
+				F2A756E71EFFF00A00C3BCAC /* SwipeNavigationBackgroundEffects.swift in Sources */,
+				F2A756E51EFFF00A00C3BCAC /* SwipeNavigationController.swift in Sources */,
+				F2A756D11EFFEFD700C3BCAC /* SwipeNavigationVC.swift in Sources */,
 				F2A756CF1EFFEFD700C3BCAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
