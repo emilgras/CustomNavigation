@@ -18,6 +18,8 @@
 		F2A756EF1EFFF35800C3BCAC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756EE1EFFF35800C3BCAC /* ProfileVC.swift */; };
 		F2A756F11EFFF36D00C3BCAC /* CardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F01EFFF36D00C3BCAC /* CardsVC.swift */; };
 		F2A756F31EFFF3AE00C3BCAC /* MatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */; };
+		F2A756F51EFFF78F00C3BCAC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F41EFFF78F00C3BCAC /* CardView.swift */; };
+		F2A756F81EFFFC6E00C3BCAC /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F2A756EE1EFFF35800C3BCAC /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F2A756F01EFFF36D00C3BCAC /* CardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsVC.swift; sourceTree = "<group>"; };
 		F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesVC.swift; sourceTree = "<group>"; };
+		F2A756F41EFFF78F00C3BCAC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F2A756E81EFFF00F00C3BCAC /* Swipe Navigation */,
+				F2A756F61EFFF79200C3BCAC /* Card View */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +133,15 @@
 				F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F2A756F61EFFF79200C3BCAC /* Card View */ = {
+			isa = PBXGroup;
+			children = (
+				F2A756F41EFFF78F00C3BCAC /* CardView.swift */,
+				F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */,
+			);
+			name = "Card View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A756F81EFFFC6E00C3BCAC /* DraggableCardView.swift in Sources */,
 				F2A756F31EFFF3AE00C3BCAC /* MatchesVC.swift in Sources */,
+				F2A756F51EFFF78F00C3BCAC /* CardView.swift in Sources */,
 				F2A756EF1EFFF35800C3BCAC /* ProfileVC.swift in Sources */,
 				F2A756E61EFFF00A00C3BCAC /* SwipeNavigationBar.swift in Sources */,
 				F2A756F11EFFF36D00C3BCAC /* CardsVC.swift in Sources */,

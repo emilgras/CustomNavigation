@@ -29,6 +29,10 @@ class SwipeNavigationVC: UIViewController {
         view.addSubview(swipeController.view)
         swipeController.didMove(toParentViewController: self)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 
