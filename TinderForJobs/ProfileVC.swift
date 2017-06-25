@@ -10,26 +10,43 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    
+    // MARK: - Properties
+    
+    
+    
+    
+    
+    // MARK: - IB Outlets
+    
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    
+    // MARK: - Life Cycle
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupAppearance()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Setup Methods
+    
+    
+    private func setupAppearance() {
+        profileImageView.layer.cornerRadius = (view.frame.width * 0.38) / 2
+        profileImageView.layer.masksToBounds = false
+        profileImageView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        profileImageView.layer.shadowColor = UIColor.lightGray.cgColor
+        profileImageView.layer.shadowOpacity = 0.2
+        profileImageView.layer.shadowRadius = 20
     }
-    */
-
+    
+    
 }

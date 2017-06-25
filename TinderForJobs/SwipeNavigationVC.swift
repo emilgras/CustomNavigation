@@ -59,7 +59,7 @@ extension SwipeNavigationVC: SwipeNavigationControllerDelegate {
 
 extension SwipeNavigationVC: SwipeNavigationControllerVisualEffectsDelegate {
     func gradientPoints() -> (startPoint: CGPoint, endPoint: CGPoint) {
-        return (CGPoint(x: 0.4, y: -0.4), CGPoint(x: 1.0, y: 1.6))
+        return (CGPoint(x: 0.2, y: -0.8), CGPoint(x: 1.0, y: 1.2))
     }
     
     func gradientColors() -> [CGColor] {

@@ -152,7 +152,7 @@ open class SwipeNavigationController: UIViewController {
             
             view.translatesAutoresizingMaskIntoConstraints = false
             var constraints:[NSLayoutConstraint] = []
-            constraints.append(view.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: swipeNavigationBarHeight))
+            constraints.append(view.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 0/*swipeNavigationBarHeight*/))
             constraints.append(view.leadingAnchor.constraint(equalTo: index == 0 ? scrollView.leadingAnchor : previousView.trailingAnchor))
             constraints.append(view.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor))
             constraints.append(view.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor, constant: -swipeNavigationBarHeight))

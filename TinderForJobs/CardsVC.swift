@@ -10,26 +10,40 @@ import UIKit
 
 class CardsVC: UIViewController {
 
+    @IBOutlet weak var cardView: CardView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        cardView.dataSource = self
+        cardView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+
+}
+
+
+extension CardsVC: CardViewDataSource {
+    
+    
+    func cardViewNumberOfCards(_ cardView: CardView) -> Int {
+        return 5
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func cardView(_ cardView: CardView, viewForCardAt index: Int) -> UIView {
+        return UIView()
     }
-    */
+    
+    func cardView(_ cardView: CardView, viewForCardOverlayAt index: Int) -> UIView? {
+        return UIView()
+    }
+    
+    
+}
 
+
+extension CardsVC: CardViewDelegate {
+    
 }

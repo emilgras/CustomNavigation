@@ -20,6 +20,8 @@
 		F2A756F31EFFF3AE00C3BCAC /* MatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */; };
 		F2A756F51EFFF78F00C3BCAC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F41EFFF78F00C3BCAC /* CardView.swift */; };
 		F2A756F81EFFFC6E00C3BCAC /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */; };
+		F2BD11DD1F0055B2009051CE /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD11DB1F0055B2009051CE /* MatchCell.swift */; };
+		F2BD11DE1F0055B2009051CE /* MatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2BD11DC1F0055B2009051CE /* MatchCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesVC.swift; sourceTree = "<group>"; };
 		F2A756F41EFFF78F00C3BCAC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
+		F2BD11DB1F0055B2009051CE /* MatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		F2BD11DC1F0055B2009051CE /* MatchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,8 @@
 			children = (
 				F2A756EB1EFFF03200C3BCAC /* App */,
 				F2A756E91EFFF01D00C3BCAC /* Storyboards */,
-				F2A756ED1EFFF33800C3BCAC /* View Controllers */,
+				F2A756ED1EFFF33800C3BCAC /* Controllers */,
+				F2BD11D81F00532D009051CE /* Views */,
 				F2A756EA1EFFF02B00C3BCAC /* Ressources */,
 				F2A756EC1EFFF31E00C3BCAC /* Frameworks */,
 			);
@@ -124,7 +129,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F2A756ED1EFFF33800C3BCAC /* View Controllers */ = {
+		F2A756ED1EFFF33800C3BCAC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F2A756D01EFFEFD700C3BCAC /* SwipeNavigationVC.swift */,
@@ -132,7 +137,7 @@
 				F2A756F01EFFF36D00C3BCAC /* CardsVC.swift */,
 				F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */,
 			);
-			name = "View Controllers";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		F2A756F61EFFF79200C3BCAC /* Card View */ = {
@@ -142,6 +147,15 @@
 				F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */,
 			);
 			name = "Card View";
+			sourceTree = "<group>";
+		};
+		F2BD11D81F00532D009051CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2BD11DB1F0055B2009051CE /* MatchCell.swift */,
+				F2BD11DC1F0055B2009051CE /* MatchCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2A756D91EFFEFD700C3BCAC /* LaunchScreen.storyboard in Resources */,
+				F2BD11DE1F0055B2009051CE /* MatchCell.xib in Resources */,
 				F2A756D61EFFEFD700C3BCAC /* Assets.xcassets in Resources */,
 				F2A756D41EFFEFD700C3BCAC /* Main.storyboard in Resources */,
 			);
@@ -220,6 +235,7 @@
 				F2A756F81EFFFC6E00C3BCAC /* DraggableCardView.swift in Sources */,
 				F2A756F31EFFF3AE00C3BCAC /* MatchesVC.swift in Sources */,
 				F2A756F51EFFF78F00C3BCAC /* CardView.swift in Sources */,
+				F2BD11DD1F0055B2009051CE /* MatchCell.swift in Sources */,
 				F2A756EF1EFFF35800C3BCAC /* ProfileVC.swift in Sources */,
 				F2A756E61EFFF00A00C3BCAC /* SwipeNavigationBar.swift in Sources */,
 				F2A756F11EFFF36D00C3BCAC /* CardsVC.swift in Sources */,
@@ -390,6 +406,7 @@
 				F2A756DF1EFFEFD700C3BCAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
