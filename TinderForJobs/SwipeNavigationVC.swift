@@ -60,7 +60,7 @@ extension SwipeNavigationVC: SwipeNavigationControllerVisualEffectsDelegate {
     
     func gradientColors() -> [CGColor] {
         return [
-            UIColor(red: 190/255.0, green: 50/255.0, blue: 127/255.0, alpha: 1.0).cgColor,
+            UIColor(red: 184/255.0, green: 50/255.0, blue: 127/255.0, alpha: 1.0).cgColor,
             UIColor(red: 244/255.0, green: 44/255.0, blue: 103/255.0, alpha: 1.0).cgColor ]
     }
 }
