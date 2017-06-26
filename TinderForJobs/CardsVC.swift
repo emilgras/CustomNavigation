@@ -46,4 +46,10 @@ extension CardsVC: CardViewDataSource {
 
 extension CardsVC: CardViewDelegate {
     
+    
+    func cardView(_ cardView: CardView, didSelectCardAt index: Int) {
+        
+    }
+
+    
 }

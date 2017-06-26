@@ -17,7 +17,13 @@ public protocol CardViewDataSource: class {
 
 
 public protocol CardViewDelegate: class {
-    
+    func cardView(_ cardView: CardView, didSelectCardAt index: Int)
+}
+
+
+enum SwipeDirection {
+    case left
+    case right
 }
 
 
@@ -29,10 +35,14 @@ open class CardView: UIView {
     
     weak var dataSource: CardViewDataSource? { didSet { setupDeck() } }
     weak var delegate: CardViewDelegate?
+    
+    
+    // MARK: - Private
+    
+    
     private var numberOfCards: Int = 0
     private var currentCardIndex: Int = 0
-    private var loadedCards = [DraggableCardView]()
-    
+    private var queueOfCards = [DraggableCardView]()
     
     
     // MARK: - Life Cycle
@@ -74,6 +84,34 @@ open class CardView: UIView {
         card.layer.shadowOpacity = 0.2
         card.layer.shadowRadius = 8
         addSubview(card)
+    }
+    
+    
+    // MARK: - Public Methods
+    
+    
+    func layoutCards(animated: Bool) {
+        
+    }
+    
+    func swipe(_ direction: SwipeDirection) {
+
+    }
+    
+    func reload() {
+        
+    }
+    
+    func dequeueReusableCardView(fromIndex index: Int) -> UIView {
+        return UIView()
+    }
+    
+    
+    // MARK: - Private Methods
+    
+    
+    private func enqueueReusableCardView(_ cardView: DraggableCardView) {
+        
     }
 
     

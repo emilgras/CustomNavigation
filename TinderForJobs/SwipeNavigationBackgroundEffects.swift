@@ -11,27 +11,19 @@ import UIKit
 class SwipeNavigationBackgroundEffects: UIView {
 
     
-    // MARK: - Properties
-
-    
-    
-    
-    
     // MARK: - UI Components
     
     
     private var shapeLayer: CAShapeLayer = {
-        let layer = CAShapeLayer()
-        return layer
+        return CAShapeLayer()
     }()
     
     private var gradientLayer: CAGradientLayer = {
-        let gradientLayer = CAGradientLayer()
-        return gradientLayer
+        return CAGradientLayer()
     }()
     
     
-    // MARK: - Lif Cycle
+    // MARK: - Life Cycle
 
     
     override init(frame: CGRect) {
@@ -60,25 +52,6 @@ class SwipeNavigationBackgroundEffects: UIView {
         gradientLayer.frame = self.frame
         layer.addSublayer(gradientLayer)
         layer.mask = shapeLayer
-    }
-    
-    func updateProgress(_ progress: CGFloat) {
-        // gradient layer
-        let points = gradientWithProgress(abs(progress))
-        gradientLayer.startPoint = CGPoint(x: points.startPoint.x, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: points.endPoint.x, y: 1.0)
-        
-        // shape layer
-        shapeLayer.path = bezierPathForControlPoints(withProgress: abs(progress)).cgPath
-        layer.mask = shapeLayer
-    }
-    
-    func setupAppearance(_ delegate: SwipeNavigationControllerVisualEffectsDelegate?) {
-        guard let delegate = delegate else { return }
-        gradientLayer.startPoint = delegate.gradientPoints().startPoint
-        gradientLayer.endPoint = delegate.gradientPoints().endPoint
-        gradientLayer.colors = delegate.gradientColors()
-        setupLayer()
     }
     
     private func bezierPathForControlPoints(withProgress progress: CGFloat) -> UIBezierPath {
@@ -125,6 +98,29 @@ class SwipeNavigationBackgroundEffects: UIView {
         startPoint.x = (progress * (startPointXMax - startPointXMin) + startPointXMin)
         endPoint.x = 1 - (progress * 1)
         return (startPoint, endPoint)
+    }
+    
+    
+    // MARK: - Public Methods
+    
+    
+    func updateProgress(_ progress: CGFloat) {
+        // gradient layer
+        let points = gradientWithProgress(abs(progress))
+        gradientLayer.startPoint = CGPoint(x: points.startPoint.x, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: points.endPoint.x, y: 1.0)
+        
+        // shape layer
+        shapeLayer.path = bezierPathForControlPoints(withProgress: abs(progress)).cgPath
+        layer.mask = shapeLayer
+    }
+    
+    func setupAppearance(_ delegate: SwipeNavigationControllerVisualEffectsDelegate?) {
+        guard let delegate = delegate else { return }
+        gradientLayer.startPoint = delegate.gradientPoints().startPoint
+        gradientLayer.endPoint = delegate.gradientPoints().endPoint
+        gradientLayer.colors = delegate.gradientColors()
+        setupLayer()
     }
 
 

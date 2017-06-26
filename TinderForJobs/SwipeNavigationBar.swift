@@ -37,7 +37,7 @@ class SwipeNavigationBar: UIView {
     let spaceToEdge: CGFloat = 20
 
     
-    // MARK: - Delegates
+    // MARK: - DataSource & Delegates
     
     
     weak var dataSource: SwipeNavigationBarDataSource? { didSet { setupSwipeNavigationBarImages() } }

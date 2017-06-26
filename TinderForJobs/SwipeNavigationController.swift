@@ -27,7 +27,7 @@ protocol SwipeNavigationControllerVisualEffectsDelegate: NSObjectProtocol {
 open class SwipeNavigationController: UIViewController {
 
     
-    // MARK: - Instance variables
+    // MARK: - Properties
     
     
     var viewControllers: (left: UIViewController, center: UIViewController, right: UIViewController)?
@@ -40,11 +40,16 @@ open class SwipeNavigationController: UIViewController {
     }
     
     
+    // MARK: - Private
+    
+    
+    private var swipeBackgroundEffectProportionalHeight: CGFloat { get { return view.frame.height * 0.32 } }
+    
+    
     // MARK: - Constants
     
     
     private let swipeNavigationBarHeight: CGFloat = 80
-    private var swipeBackgroundEffectProportionalHeight: CGFloat { get { return view.frame.height * 0.32 } }
     
     
     // MARK: - DataSource & Delegates
@@ -182,6 +187,8 @@ open class SwipeNavigationController: UIViewController {
 }
 
 extension SwipeNavigationController: UIScrollViewDelegate {
+    
+    
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let contentOffsetX = scrollView.contentOffset.x
         let width = view.frame.width
@@ -198,15 +205,25 @@ extension SwipeNavigationController: UIScrollViewDelegate {
             delegate?.swipeNavigationController?(self, didMoveToControllerWithIndex: currentIndex)
         }
     }
+    
+    
 }
 
+
 extension SwipeNavigationController: SwipeNavigationBarDataSource {
+    
+    
     func swipeNavigationBarImages() -> (left: UIImage, center: UIImage, right: UIImage) {
         return dataSource!.swipeNavigationBarImages()
     }
+    
+    
 }
 
+
 extension SwipeNavigationController: SwipeNavigationBarDelegate {
+    
+    
     func swipeNavigationBar(_ navigationBar: SwipeNavigationBar, didSelectMenuWithIndex index: Int) {
         if currentIndex != index {
             scrollView.setContentOffset(pointFromIndex(index), animated: true)
@@ -221,6 +238,8 @@ extension SwipeNavigationController: SwipeNavigationBarDelegate {
         default: currentIndex = index; return CGPoint(x: view.frame.width * 2, y: 0)
         }
     }
+    
+    
 }
 
 

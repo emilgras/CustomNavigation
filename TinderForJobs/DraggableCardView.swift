@@ -19,6 +19,13 @@ class DraggableCardView: UIView {
     private var centerLocation: CGPoint!
     
     
+    // MARK: - UI Components
+    
+    
+    var contentView: UIView!
+    var overlayView: UIView?
+    
+    
     // MARK: - Life Cycle
     
     
@@ -60,7 +67,6 @@ class DraggableCardView: UIView {
     
     @objc private func handlePan(gestureRecognizer: UIPanGestureRecognizer) {
         let translation = gestureRecognizer.translation(in: self)
-//        let location = gestureRecognizer.location(in: self)
         switch gestureRecognizer.state {
         case .began:
             break
