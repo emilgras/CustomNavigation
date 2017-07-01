@@ -69,20 +69,20 @@ open class SwipeNavigationController: UIViewController {
         return v
     }()
     
-    var swipeNavigationBar: SwipeNavigationBar = {
-        let nav = SwipeNavigationBar()
-        nav.translatesAutoresizingMaskIntoConstraints = false
-        return nav
-    }()
-    
     var scrollView: UIScrollView = {
         let sv = UIScrollView()
         sv.bounces = true
         sv.isPagingEnabled = true
         sv.backgroundColor = UIColor.clear
-        sv.showsHorizontalScrollIndicator = true
+        sv.showsHorizontalScrollIndicator = false
         sv.translatesAutoresizingMaskIntoConstraints = false
         return sv
+    }()
+    
+    var swipeNavigationBar: SwipeNavigationBar = {
+        let nav = SwipeNavigationBar()
+        nav.translatesAutoresizingMaskIntoConstraints = false
+        return nav
     }()
     
     

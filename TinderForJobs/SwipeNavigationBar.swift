@@ -22,19 +22,19 @@ class SwipeNavigationBar: UIView {
     // MARK: - Properties
     
     
-    var navigationBarImageViews = [UIImageView]()
-    var animatableXConstraints = [NSLayoutConstraint]()
-    var animatableWidthConstraints = [NSLayoutConstraint]()
-    var animatableHeightConstraints = [NSLayoutConstraint]()
-    var imageViewInterSpacing: CGFloat { get { return (frame.width / 2) - (imageViewBigWidth / 2) - spaceToEdge } }
+    private var navigationBarImageViews = [UIImageView]()
+    private var animatableXConstraints = [NSLayoutConstraint]()
+    private var animatableWidthConstraints = [NSLayoutConstraint]()
+    private var animatableHeightConstraints = [NSLayoutConstraint]()
+    private var imageViewInterSpacing: CGFloat { get { return (frame.width / 2) - (imageViewBigWidth / 2) - spaceToEdge } }
     
     
     // MARK: - Constants
     
     
-    let imageViewBigWidth: CGFloat = 30
-    let imageViewSmallWidth: CGFloat = 22
-    let spaceToEdge: CGFloat = 20
+    private let imageViewBigWidth: CGFloat = 30
+    private let imageViewSmallWidth: CGFloat = 22
+    private let spaceToEdge: CGFloat = 20
 
     
     // MARK: - DataSource & Delegates

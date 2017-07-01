@@ -68,10 +68,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBH-zA-VoJ" customClass="CardView" customModule="TinderForJobs" customModuleProvider="target">
-                                <rect key="frame" x="9.5" y="80" width="356" height="463"/>
+                                <rect key="frame" x="9.5" y="80" width="356" height="498.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="iBH-zA-VoJ" secondAttribute="height" multiplier="1:1.3" id="616-fL-3DZ"/>
+                                    <constraint firstAttribute="width" secondItem="iBH-zA-VoJ" secondAttribute="height" multiplier="1:1.4" id="616-fL-3DZ"/>
                                 </constraints>
                             </view>
                         </subviews>

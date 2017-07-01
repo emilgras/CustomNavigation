@@ -19,9 +19,10 @@
 		F2A756F11EFFF36D00C3BCAC /* CardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F01EFFF36D00C3BCAC /* CardsVC.swift */; };
 		F2A756F31EFFF3AE00C3BCAC /* MatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */; };
 		F2A756F51EFFF78F00C3BCAC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F41EFFF78F00C3BCAC /* CardView.swift */; };
-		F2A756F81EFFFC6E00C3BCAC /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */; };
+		F2A756F81EFFFC6E00C3BCAC /* DraggableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A756F71EFFFC6E00C3BCAC /* DraggableCard.swift */; };
 		F2BD11DD1F0055B2009051CE /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD11DB1F0055B2009051CE /* MatchCell.swift */; };
 		F2BD11DE1F0055B2009051CE /* MatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2BD11DC1F0055B2009051CE /* MatchCell.xib */; };
+		F2F0EAF41F07068600F7B6EF /* DraggableCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0EAF31F07068600F7B6EF /* DraggableCardAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +40,10 @@
 		F2A756F01EFFF36D00C3BCAC /* CardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsVC.swift; sourceTree = "<group>"; };
 		F2A756F21EFFF3AE00C3BCAC /* MatchesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesVC.swift; sourceTree = "<group>"; };
 		F2A756F41EFFF78F00C3BCAC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
+		F2A756F71EFFFC6E00C3BCAC /* DraggableCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCard.swift; sourceTree = "<group>"; };
 		F2BD11DB1F0055B2009051CE /* MatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
 		F2BD11DC1F0055B2009051CE /* MatchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchCell.xib; sourceTree = "<group>"; };
+		F2F0EAF31F07068600F7B6EF /* DraggableCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				F2A756F41EFFF78F00C3BCAC /* CardView.swift */,
-				F2A756F71EFFFC6E00C3BCAC /* DraggableCardView.swift */,
+				F2A756F71EFFFC6E00C3BCAC /* DraggableCard.swift */,
+				F2F0EAF31F07068600F7B6EF /* DraggableCardAnimator.swift */,
 			);
 			name = "Card View";
 			sourceTree = "<group>";
@@ -232,7 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A756F81EFFFC6E00C3BCAC /* DraggableCardView.swift in Sources */,
+				F2F0EAF41F07068600F7B6EF /* DraggableCardAnimator.swift in Sources */,
+				F2A756F81EFFFC6E00C3BCAC /* DraggableCard.swift in Sources */,
 				F2A756F31EFFF3AE00C3BCAC /* MatchesVC.swift in Sources */,
 				F2A756F51EFFF78F00C3BCAC /* CardView.swift in Sources */,
 				F2BD11DD1F0055B2009051CE /* MatchCell.swift in Sources */,
